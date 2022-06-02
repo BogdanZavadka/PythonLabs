@@ -1,8 +1,8 @@
-from PythonLabs.lab9.models.counters.counter import Counter
+from models.counters.counter import Counter
 
 
 class ReverseCounter(Counter):
-    def __init__(self, number_of_elements, device_type, device_name, price):
+    def __init__(self, number_of_elements: int, device_type: str, device_name: str, price: float):
         super().__init__(number_of_elements, device_type, device_name, price)
 
     def __str__(self):

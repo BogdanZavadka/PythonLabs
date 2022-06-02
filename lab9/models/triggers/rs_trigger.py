@@ -1,8 +1,8 @@
-from PythonLabs.lab9.models.triggers.trigger import Trigger
+from models.triggers.trigger import Trigger
 
 
 class RSTrigger(Trigger):
-    def __init__(self, device_type, device_name, price, number_of_states):
+    def __init__(self, device_type: str, device_name: str, price: float, number_of_states: int):
         super().__init__(device_type, device_name, price, number_of_states)
 
     def __str__(self):
